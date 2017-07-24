@@ -14,7 +14,31 @@ Year: 2017
 <head>
 	<title>HipCentral</title>
 	<link rel="stylesheet" type="text/css" href="lib/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/logo-fav.png">	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/js/indxdb.js"></script>
+
+    <script type="text/javascript">
+	    function handlemodal(){			
+			var modal = document.getElementById('modalviewframe');			
+			var modalimg = document.getElementById("imgcnt");
+
+		    var bg = $(this).css('background-image');
+		    bg = bg.replace('url(','').replace(')','').replace(/\"/gi, "");
+
+			modal.style.display = "block";
+			modalimg.src = bg;
+			//captionText.innerHTML = this.alt;
+
+	    }
+
+	    function handleclose(){	    	
+	    	var modal = document.getElementById('modalviewframe');
+			modal.style.display = "none";
+	    }	  	
+    </script>  
 </head>
+
 <body>
 	<div class="navbar">
 	</div>
@@ -31,8 +55,8 @@ Year: 2017
 		</div>
 
 		<div class="row">
-			<div class="block bd">
-			</div>
+			<!-- <div class="block bd">
+			</div> -->
 			<div class="block be">
 			</div>
 			<div class="block bf">
@@ -41,11 +65,24 @@ Year: 2017
 
 	</div>
 
-	<div class="window">
-
+	<div class="break">
+		<!-- <button id="dd" onclick="readAll()" style="background: blue; width: 10px; height: 10px;"></button> -->
 	</div>
 
-	<div>
+	<div class="window" id="windowframe">
+		<!-- MAIN -->
 	</div>
+
+	<div id="modalviewframe">
+		<!-- MODAL BOX -->
+		<span class="close" onclick="handleclose()">&times;</span>
+		<img class="content" id="imgcnt">
+	</div>
+
+	<div class="footbar">
+		<div>Released under MIT License By <a href="https://github.com/anjandash">@anjandash</a></div>
+	</div>
+
+	<script type="text/javascript">window.onload = function() { setTimeout(function(){ readAll(); }, 10); };</script>
 </body>
 </html>
