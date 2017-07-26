@@ -3,6 +3,7 @@
 Project: HipCentral
 Repo: https://github.com/anjandash/hipcentral
 Type: PUBLIC
+Description: (demo) Online Clothing Store
 
 Author: Anjan Karmakar
 Year: 2017
@@ -14,7 +15,7 @@ Year: 2017
 <head>
 	<title>HipCentral</title>
 	<link rel="stylesheet" type="text/css" href="lib/css/style.css">
-    <link rel="shortcut icon" type="image/png" href="img/logo-fav.png">	
+    <link rel="shortcut icon" type="image/png" href="img/favicon.jpg">	
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="lib/js/indxdb.js"></script>
 
@@ -28,7 +29,6 @@ Year: 2017
 
 			modal.style.display = "block";
 			modalimg.src = bg;
-			//captionText.innerHTML = this.alt;
 
 	    }
 
@@ -41,6 +41,7 @@ Year: 2017
 
 <body>
 	<div class="navbar">
+		<div id="logo-block">HipCentral</div>
 	</div>
 
 	<div class="banner">
@@ -65,9 +66,7 @@ Year: 2017
 
 	</div>
 
-	<div class="break">
-		<!-- <button id="dd" onclick="readAll()" style="background: blue; width: 10px; height: 10px;"></button> -->
-	</div>
+	<div class="break"></div>
 
 	<div class="window" id="windowframe">
 		<!-- MAIN -->
@@ -76,13 +75,24 @@ Year: 2017
 	<div id="modalviewframe">
 		<!-- MODAL BOX -->
 		<span class="close" onclick="handleclose()">&times;</span>
-		<img class="content" id="imgcnt">
+		<div style="height: 75%;">
+			<img class="content" id="imgcnt">
+			<div id="caption">
+				<div class="midblock ma">Product name</div>
+				<div class="midblock mb">@username</div>
+				<div class="midblock mc">$25</div>
+				<br/>
+				<div class="midblock md" onclick="alert('OK!')">ADD TO CART</div>
+				<div class="midblock me" onclick="alert('DONE!')">CHECKOUT</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="footbar">
-		<div>Released under MIT License By <a href="https://github.com/anjandash">@anjandash</a></div>
+		<div style="color: grey; font-family: gradies; font-size: 24px;">HipCentral</div><br/>
+		<div style="border-top: 1px solid lightgrey; width: 300px; padding-top: 8px; margin: 0px auto;">Released under MIT License By <a href="https://github.com/anjandash">@anjandash</a></div>
 	</div>
 
-	<script type="text/javascript">window.onload = function() { setTimeout(function(){ readAll(); }, 10); };</script>
+	<script type="text/javascript">window.onload = function() { setTimeout(function(){ readAll(); }, 80); };</script>
 </body>
 </html>
