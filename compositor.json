@@ -89,7 +89,7 @@
   },
   "content": [
     {
-      "component": "nav",
+      "component": "nav", 
       "links": [
         {
           "href": "https://github.com/anjandash/hipcentral",
