@@ -36,50 +36,67 @@ Year: 2017
 			modal.style.display = "none";
 	    }	  	
 
-		function toggler(){}	    
+		function toggler(){}	
+		function clk(){}
+
+		$(document).ready(function() {
+			setTimeout(function() {
+       			document.getElementById('baseframe').style.visibility = 'visible';
+		    }, 200);		    
+		});
+
+
+		
     </script> 
 </head>
 
 <body>
 	<div class="navbar">
-		<div id="logo-block">HipCentral</div>
+		<div id="logo-block" onclick="location.reload();">HipCentral</div>
 		<div id="topmenu">
 			<div id="menugrid" onclick="toggler()"></div>
 			<div id="menulist">
-				<div id="menutabs">vision</div>
-				<div id="menutabs">culture</div>
-				<div id="menutabs">archives</div>
+				<div id="menutabs" onclick="clk()">vision</div>
+				<div id="menutabs" onclick="clk()">culture</div>
+				<div id="menutabs" onclick="clk()">archives</div>
 			</div>
 
 		</div>
 	</div>
 
+	<div class="window" id="windowframe">
+		<!-- MAIN -->
+	</div>
+
+	<div id="baseframe" style="visibility: hidden;">	
+	<div class="break"></div>
 	<div class="banner">
 
-		<div class="row">
+		<!-- <div class="row">
 			<div class="block ba">
 			</div>
 			<div class="block bb">
 				<div id="adblog">
 					<div>
 						<div id="adline"></div>
-						<div id="adtitle">Business on private jets</div>
-						<div id="adcont">This is the reason why billionaires prefer doing business in the sky than at any other location. Grand hotels are a thing of the past, now that you can have the same luxury while in the air. And while you are <span style="font-size: 14px;">...</span> at it why not close some business deals.</div>
+						<div id="adtitle">All new summer dresser</div>
+						<div id="adcont">This is the reason why you might prefer dressing up only in jeans this summer. Just cotton bottoms are a thing of the past, now that you can have the same comfort in jeans while looking great. We <span style="font-size: 14px;">...</span> are loving it. Go out and look great. And while you are at it why not close some business deals.</div>
 					</div>
 				</div>
 			</div>
 			<div class="block bc">
 			</div>			
-		</div>
+		</div> -->
 
 		<div class="row">
-			<!-- <div class="block bd">
+			<!--- <div class="block bd">
 			</div> -->
 			<div class="block be">
+				<p id="blocklogo">HipCentral</p>
 			</div>
 			<div class="block bf">
 				<div id="mailcover">
-					<div id="mailsay">get latest updates &amp; discount codes mailed directly to you</div>
+					<div id="mailsay">the latest updates &amp; <span style="background: rgba(249,146,127,0.5);">discount offers</span> mailed directly to you</div>
 					<div id="maildiv">
 					<form action="" method="POST" autocomplete="off">
 						<input type="email" name="email" id="landermail">
@@ -93,12 +110,13 @@ Year: 2017
 
 	</div>
 
-
-	<div class="break"></div>
-
-	<div class="window" id="windowframe">
-		<!-- MAIN -->
+	<div class="break" style="border: 1px solid transparent;"></div>	
+	<div class="footbar">
+		<div style="color: grey; font-family: gradies; font-size: 24px;">HipCentral</div><br/>
+		<div style="border-top: 1px solid lightgrey; width: 300px; padding-top: 8px; margin: 0px auto;">Released under MIT License By <a href="https://github.com/anjandash" target="blank">@anjandash</a></div>
 	</div>
+	</div>	
+
 
 	<div id="modalviewframe">
 		<!-- MODAL BOX -->
@@ -116,9 +134,7 @@ Year: 2017
 		</div>
 	</div>
 
-	<div class="footbar">
-		<div style="color: grey; font-family: gradies; font-size: 24px;">HipCentral</div><br/>
-		<div style="border-top: 1px solid lightgrey; width: 300px; padding-top: 8px; margin: 0px auto;">Released under MIT License By <a href="https://github.com/anjandash" target="blank">@anjandash</a></div>
+	<div id="clickview"><br/>
 	</div>
 
 	<script type="text/javascript">window.onload = function() { setTimeout(function(){ readAll(); }, 80); };</script>
