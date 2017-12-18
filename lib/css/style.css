@@ -818,10 +818,9 @@ body{
 	}
 
 	#caption{
-		height: 302px;
+		height: 300px;
 		width: 260px;
 		padding: 0px;
-		margin-top: 10px;
 	}
 
 	#imgx{
@@ -941,9 +940,10 @@ body{
 	}
 }
 
-@media only screen and (max-width: 535px){
+@media only screen and (max-width: 530px){
 	#caption{
 		height: 250px;
+		margin-top: 10px;
 	}
 }
 
