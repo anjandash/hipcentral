@@ -12,6 +12,7 @@ Year: 2017
 <html>
 <head>
 	<title>HipCentral</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="lib/css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/faviconn.png">	
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -61,6 +62,10 @@ Year: 2017
 				<div id="menutabs" onclick="clk()">vision</div>
 				<div id="menutabs" onclick="clk()">culture</div>
 				<div id="menutabs" onclick="clk()">archives</div>
+
+				<div class="mobmenutabs" id="vs" onclick="clk()"></div>
+				<div class="mobmenutabs" id="cl" onclick="clk()"></div>
+				<div class="mobmenutabs" id="ar" onclick="clk()"></div>
 			</div>
 
 		</div>
@@ -70,29 +75,10 @@ Year: 2017
 		<!-- MAIN -->
 	</div>
 
-	<div id="baseframe" style="visibility: hidden;">	
+<!-- 	<div id="baseframe" style="visibility: hidden;">	
 	<div class="break"></div>
 	<div class="banner">
-
-		<!-- <div class="row">
-			<div class="block ba">
-			</div>
-			<div class="block bb">
-				<div id="adblog">
-					<div>
-						<div id="adline"></div>
-						<div id="adtitle">All new summer dresser</div>
-						<div id="adcont">This is the reason why you might prefer dressing up only in jeans this summer. Just cotton bottoms are a thing of the past, now that you can have the same comfort in jeans while looking great. We <span style="font-size: 14px;">...</span> are loving it. Go out and look great. And while you are at it why not close some business deals.</div>
-					</div>
-				</div>
-			</div>
-			<div class="block bc">
-			</div>			
-		</div> -->
-
 		<div class="row">
-			<!--- <div class="block bd">
-			</div> -->
 			<div class="block be">
 				<p id="blocklogo">HipCentral</p>
 			</div>
@@ -109,21 +95,24 @@ Year: 2017
 				</div>
 			</div>			
 		</div>
-
 	</div>
+
+-->
 
 	<div class="break" style="border: 1px solid transparent;"></div>	
 	<div class="footbar">
 		<div style="color: grey; font-family: gradies; font-size: 24px;">HipCentral</div><br/>
-		<div style="border-top: 1px solid lightgrey; width: 300px; padding-top: 8px; margin: 0px auto;">Released under MIT License By <a href="https://github.com/anjandash" target="blank">@anjandash</a></div>
+		<div id="fx">Released under MIT License By <a href="https://github.com/anjandash" target="blank">@anjandash</a></div>
 	</div>
-	</div>	
+<!--
+
+	</div>	 -->
 
 
 	<div id="modalviewframe">
 		<!-- MODAL BOX -->
 		<span class="close" onclick="handleclose()">&times;</span>
-		<div style="height: 75%;">
+		<div id="imgx">
 			<img class="content" id="imgcnt">
 			<div id="caption">
 				<div class="midblock ma">Product name</div>
@@ -132,6 +121,9 @@ Year: 2017
 				<br/>
 				<div class="midblock md" onclick="">ADD TO CART</div>
 				<div class="midblock me" onclick="">CHECKOUT</div>
+
+				<div class="mobmidblock mmd"><img src="img/icons/addtocart.png" class="buttonimg"></div>
+				<div class="mobmidblock mme"><img src="img/icons/checkout.png" class="buttonimg"></div>
 			</div>
 		</div>
 	</div>
